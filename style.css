@@ -141,7 +141,7 @@ nav .fas {
   font-weight: 600;
 }
 .about p {
-  color: #636363;
+  color: #303030;
 }
 .about-col p {
   color: #ffeab8;
@@ -161,7 +161,7 @@ nav .fas {
 }
 .about-col h3 {
   font-size: 25px;
-  color: #272727;
+  color: #000000af;
   text-align: center;
   font-weight: 600;
   margin: 10px 0;
@@ -199,6 +199,7 @@ nav .fas {
   border-radius: 10px;
   margin: 5px;
   margin-bottom: 50px;
+  text-align: center;
   width: 300px;
   padding: 20px;
   padding-bottom: 10px;
@@ -241,7 +242,7 @@ nav .fas {
     font-size: 26px;
   }
   .row .team_member p.role {
-    font-size: 20px;
+    font-size: 7px;
   }
 }
 .events {
