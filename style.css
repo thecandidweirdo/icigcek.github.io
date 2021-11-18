@@ -237,7 +237,10 @@ nav .fas {
   transform: scale(105%);
 }
 @media all and (max-width: 768px) {
-  .team .team_member p.role {
+  .wrapper h1 {
+    font-size: 26px;
+  }
+  .row .team_member p.role {
     font-size: 20px;
   }
 }
