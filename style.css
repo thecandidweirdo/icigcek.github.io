@@ -1,0 +1,341 @@
+@import url(fontawesome-all.min.css);
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,400&family=Rubik:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(14,9,30,0.7)),url(images/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 65px;    
+}
+.nav-links{
+    flex: 1;
+    padding-top: 0px;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: azure;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #d3a31e;
+    display: block;
+    margin: auto;
+    transition: 0.45s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+
+.text-box{
+    width: 90%;
+    color: azure;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+.hero-btn {
+    display: inline;
+    text-decoration: none;
+    color: white;
+    border: 1px solid whitesmoke;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #d3a31e;
+    background: #d3a31e;
+    transition: 1s;
+}
+
+nav .fas{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #d3a31e;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: .8s;
+    }
+    nav .fas{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
+
+.about{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    
+}
+.row{
+    width: 100%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about h1{
+    font-size: 44px;
+    font-weight: 600;
+}
+.about p{
+    color: #636363;
+}
+.about-col p{
+  color: #ffeab8;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.about-col{
+    flex-basis: 31%;
+    background-color: #d3a31e;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+.about-col h3{
+    font-size: 25px;
+    color: #272727;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.about-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2) ;
+    transition: 0.2s;
+}
+@media(max-width: 700%){
+    .row{
+        flex-direction: column;
+    }
+}
+
+
+.wrapper{
+    margin: 7.5%;
+}
+.wrapper h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 44px;
+    margin-top: 0;
+    margin-bottom: 60px;
+    text-align: center;
+    
+}
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+
+.team .team_member{
+    background: #d3a31e;
+    border-radius: 10px;
+    margin: 5px;
+    margin-bottom: 50px;
+    width:300px;
+    padding: 20px;
+    line-height: 20px;
+    color: rgb(48, 48, 48);
+    position: relative;
+}
+.team .team_member h3{
+    color: #ecd8a1;
+    font-size: 26px;
+    margin-top: 50px;
+    line-height: 25px;
+}
+.team .team_member p.role{
+    color: rgb(255, 255, 255);
+    font-size: 11px;
+    margin: 6px 0;
+}
+
+.team .team_member .team_img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+
+}
+.team .team_member .team_img img{
+width: 100px;
+height: 100px;
+transform: scale(105%);
+transition: 1s;
+}
+.team .team_member .team_img:hover img{
+    transform: scale(115%);
+}
+@media(max-width: 700%){
+    .wrapper{
+        flex-direction: column;
+    }
+}
+.events{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.events h1{
+    font-size: 44px;
+}
+.events-col{
+    flex-basis: 32%;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.events-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+background: rgba(196, 121, 24, 0.7);
+}
+.layer h3{
+   width: 100%;
+   font-weight: 500;
+   color: azure;
+   font-size: 26px;
+   bottom: 0;
+   left: 50%;
+   transform: translate(-50%);
+   position: absolute;
+   opacity: 0;
+   transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.register{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.74),rgba(0,0,0,0.74)),url(images/reg.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+.register h1{
+    color: aliceblue;
+    margin-bottom: 40px;
+    font-size: 26px;
+}
+@media(max-width: 700px){
+    .register h1{
+        font-size: 24px;
+    }
+}
+.footer{
+    background-color: #d3a31e;
+    text-align: center;
+    align-items: center;
+    padding-left: 12px;
+    width: 100%;
+    height: 20%;
+}
+.footer h4{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: aliceblue;
+    padding-left: 5px;
+    margin-top: 20px;
+    font-weight: 540;
+}
+.icons .fab{
+    color: #ffffff;
+    
+    cursor: pointer;
+    padding: 2px 0;
+}
+
+
