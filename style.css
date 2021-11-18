@@ -194,30 +194,31 @@ nav .fas {
   justify-content: center;
 }
 
-.team .team_member {
+.row .team_member {
   background: #d3a31e;
   border-radius: 10px;
   margin: 5px;
   margin-bottom: 50px;
   width: 300px;
   padding: 20px;
+  padding-bottom: 10px;
   line-height: 20px;
   color: rgb(48, 48, 48);
   position: relative;
 }
-.team .team_member h3 {
+.row .team_member h3 {
   color: #ecd8a1;
   font-size: 26px;
   margin-top: 50px;
   line-height: 25px;
 }
-.team .team_member p.role {
+.row .team_member p.role {
   color: rgb(255, 255, 255);
   font-size: 11px;
   margin: 6px 0;
 }
 
-.team .team_member .team_img {
+.row .team_member .team_img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -226,18 +227,18 @@ nav .fas {
   left: 50%;
   transform: translateX(-50%);
 }
-.team .team_member .team_img img {
+.row .team_member .team_img img {
   width: 100px;
   height: 100px;
-  transform: scale(105%);
+  transform: scale(95%);
   transition: 1s;
 }
-.team .team_member .team_img:hover img {
-  transform: scale(115%);
+.row .team_member .team_img:hover img {
+  transform: scale(105%);
 }
 @media all and (max-width: 768px) {
-  .wrapper {
-    flex-direction: column;
+  .team .team_member p.role {
+    font-size: 20px;
   }
 }
 .events {
